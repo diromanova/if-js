@@ -1,46 +1,42 @@
-let user = 'John Doe';
-console.log(user);
-
-const student = 'Diana Linkova';
-console.log(student);
-
-user = student;
-// user = Diana Linkova
-console.log(user);
-
-let test = 1;
-test = test + 1;
-test = test + '1';
-// test = 1;
-// test = 2;
-// test = 2 + '1' = "2" + "1" = "21";
-console.log(test);
-
-test = test - 1;
-// test = 20;
-console.log(test);
-
-test = Boolean(test);
-// test = true;
-console.log(test);
-
-const arrayOne = [2, 3, 5, 8];
-let result = 1;
-for (let i = 0; i < arrayOne.length; i++) {
-  result = result * arrayOne[i];
-}
-console.log(result);
-
-const arrayTwo = [2, 5, 8, 15, 0, 6, 20, 3];
-for (let i = 0; i < arrayTwo.length; i++) {
-  if (arrayTwo[i] > 5 && arrayTwo[i] < 10) {
-    console.log(arrayTwo[i]);
-  }
+// Task 1
+function palindrom(word) {
+  return word == word.toLowerCase().split('').reverse().join('');
 }
 
-const arrayThree = [2, 5, 8, 15, 0, 6, 20, 3];
-for (let i = 0; i < arrayThree.length; i++) {
-  if (arrayThree[i] % 2 == 0 && arrayThree[i] != 0) {
-    console.log(arrayThree[i]);
-  }
+const str1 = 'wow';
+console.log(palindrom(str1));
+
+const str2 = 'bird';
+console.log(palindrom(str2));
+
+const str3 = 'SOS';
+console.log(palindrom(str3));
+
+// Task 2.1
+function min(a, b) {
+  return a < b ? a : b;
 }
+
+const num1 = 34;
+const num2 = 15;
+
+console.log(min(num1, num2));
+
+// Task 2.2
+function max(x, y) {
+  return x > y ? x : y;
+}
+
+const num3 = 3;
+const num4 = 5;
+
+console.log(max(num3, num4));
+
+// Task 3
+
+// const array = [1, 30, 4, 0, 60, 5, 9, 3, 0, 4];
+
+// function returnZeroArray(array2) {
+//   array.map();
+// }
+// console.log(returnZeroArray);
