@@ -2,16 +2,19 @@
 function palindrom(word) {
   return word.toLowerCase() == word.toLowerCase().split('').reverse().join('');
 }
+palindrom();
 
 // Task 2.1
 function min(a, b) {
   return a < b ? a : b;
 }
+min();
 
 // Task 2.2
 function max(x, y) {
   return x > y ? x : y;
 }
+max();
 
 // Task 3
 
@@ -25,3 +28,5 @@ const returnZeroArray = array.map(function (element) {
   }
   return element;
 });
+
+returnZeroArray();
