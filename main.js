@@ -1,27 +1,57 @@
-// Task 1
-function palindrom(word) {
-  return word.toLowerCase() == word.toLowerCase().split('').reverse().join('');
-}
+const date = '2022-01-17';
+const result = date.split('-').reverse().join('.');
+console.log(result);
 
-// Task 2.1
-function min(a, b) {
-  return a < b ? a : b;
-}
+const data = [
+  {
+    country: 'Russia',
+    city: 'Saint Petersburg',
+    hotel: 'Hotel Leopold',
+  },
+  {
+    country: 'Spain',
+    city: 'Santa Cruz de Tenerife',
+    hotel: 'Apartment Sunshine',
+  },
+  {
+    country: 'Slowakia',
+    city: 'Vysokie Tatry',
+    hotel: 'Villa Kunerad',
+  },
+  {
+    country: 'Germany',
+    city: 'Berlin',
+    hotel: 'Hostel Friendship',
+  },
+  {
+    country: 'Indonesia',
+    city: 'Bali',
+    hotel: 'Ubud Bali Resort&SPA',
+  },
+  {
+    country: 'Netherlands',
+    city: 'Rotterdam',
+    hotel: 'King Kong Hostel',
+  },
+  {
+    country: 'Marocco',
+    city: 'Ourika',
+    hotel: 'Rokoko Hotel',
+  },
+  {
+    country: 'Germany',
+    city: 'Berlin',
+    hotel: 'Hotel Rehberge Berlin Mitte',
+  },
+];
 
-// Task 2.2
-function max(x, y) {
-  return x > y ? x : y;
-}
-
-// Task 3
-
-const array = [1, 30, 4, 0, 60, 5, 9, 3, 200, 4];
-
-const returnZeroArray = array.map(function (element) {
-  if (element == 0) {
-    return 'zero';
-  } else if (element % 10 == 0) {
-    return element.toString().replaceAll(0, 'zero');
+function search(place) {
+  for (let i = 0; i < data.length; i++) {
+    if (`${data[i].country}${data[i].city}${data[i].hotel}`.includes(place)) {
+      const { country, city, hotel } = data[i];
+      const location = `Страна: ${country}, город: ${city}, отель: ${hotel}`;
+      console.log(location);
+    }
   }
-  return element;
-});
+}
+search('Rotterdam');
