@@ -285,6 +285,7 @@ const searching = (place) => {
   );
   console.log(result);
 };
+
 searching('UK');
 
 const getCountries = (object, hotels) => {
