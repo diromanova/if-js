@@ -286,7 +286,7 @@ const searching = (place) => {
   console.log(result);
 };
 
-searching('UK');
+searching('Germany');
 
 const getCountries = (object, hotels) => {
   if (!Object.hasOwn(hotels.country)) {
