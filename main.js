@@ -117,9 +117,8 @@
 // }
 // search('Rotterdam');
 
-const palindrome = (str) => {
-  return str === str.split('').reverse().join('');
-};
+const palindrome = (str) => str === str.split('').reverse().join('');
+
 console.log(palindrome('sos'));
 
 const hotels = [
