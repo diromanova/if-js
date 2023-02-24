@@ -379,8 +379,9 @@ class Students {
   }
 
   getInfo() {
-    this.studentsData.sort((a, b) =>
-      a.admissionYear < b.admissionYear ? 1 : -1,
+    this.studentsData.sort(
+      (oneStudent, twoStudent) =>
+        new Student(oneStudent).course - new Student(twoStudent).course,
     );
     return this.studentsData.map(
       (student) =>
@@ -390,6 +391,7 @@ class Students {
     );
   }
 }
+
 const studentsData = [
   {
     firstName: 'Василий',
@@ -418,5 +420,4 @@ const studentsData = [
 ];
 
 const students = new Students(studentsData);
-console.log(Student.course);
 console.log(students.getInfo());
