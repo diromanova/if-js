@@ -422,6 +422,10 @@
 // const students = new Students(studentsData);
 // console.log(students.getInfo());
 
+const first = document.getElementById('text1');
+const second = document.getElementById('text2');
+const third = document.getElementById('text3');
+
 const colors = {
   data: ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'],
   [Symbol.iterator]: function () {
@@ -450,9 +454,7 @@ const colors = {
 const changeStyle = (color) => (click) => {
   click.target.style.color = color.next().value;
 };
-const first = document.getElementById('text1');
-const second = document.getElementById('text2');
-const third = document.getElementById('text3');
+
 first.addEventListener('click', changeStyle(colors));
 second.addEventListener('click', changeStyle(colors));
 third.addEventListener('click', changeStyle(colors));
