@@ -1,32 +1,40 @@
 {
-  "name": "if-js",
+  "name": "if",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier src/js/**/*js",
+    "lint": "eslint src/js/**/*.js",
+    "lint:write": "eslint --debug src/js --fix",
     "prepare": "husky install",
-    "lint": "prettier --write . && eslint main.js --fix"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diromanova/if-js.git"
+    "url": "git+https://github.com/Anna190997/if-js.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diromanova/if-js/issues"
+    "url": "https://github.com/Anna190997/if-js/issues"
   },
-  "homepage": "https://github.com/diromanova/if-js#readme",
+  "homepage": "https://github.com/Anna190997/if-js#readme",
   "devDependencies": {
-    "eslint": "^8.29.0",
-    "husky": "^8.0.2",
-    "jest": "^29.3.1",
-    "prettier": "2.8.1"
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0",
+    "prettier": "2.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "dependencies": {
-    "@ngneat/falso": "^6.4.0",
-    "save-dev": "^0.0.1-security"
+    "husky": "^7.0.4",
+    "jquery": "^3.6.3",
+    "slick-carousel": "^1.8.1"
   }
 }
