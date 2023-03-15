@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anna190997/if-js.git"
+    "url": "git+https://github.com/diromanova/if-js.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Anna190997/if-js/issues"
+    "url": "https://github.com/diromanova/if-js/issues"
   },
-  "homepage": "https://github.com/Anna190997/if-js#readme",
+  "homepage": "https://github.com/diromanova/if-js#readme",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
